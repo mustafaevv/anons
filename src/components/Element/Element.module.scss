@@ -1,0 +1,63 @@
+.element {
+  width: 100%;
+  background: #f2f4f5;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+  &__image {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 40px;
+  }
+
+  &__block {
+    width: 100%;
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+  }
+  &__region {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+    margin-top: 50px;
+  }
+  &__address {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  &__webSite {
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &__link {
+    font-size: 24px;
+    margin-right: 30px;
+    color: #000;
+  }
+  &__tel{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  &__email{
+    margin-top: 20px;
+    color: #000;
+  }
+}
