@@ -1,67 +1,69 @@
 const categories = [
   {
     id: 0,
-    text: 'toshkent',
+    text: 'Toshkent',
     link: '/category/tashkent',
   },
   {
     id: 1,
-    text: 'samarqand',
+    text: 'Samarqand',
     link: '/category/samarqand'
   },
   {
     id: 2,
-    text: 'namangan',
+    text: 'Namangan',
     link: '/category/namangan'
   },
   {
     id: 3,
-    text: 'farg`ona',
-    link: '/category/farg`ona'
+    text: `Farg'ona`,
+    link: `/category/farg'ona`
   },
   {
     id: 4,
-    text: 'andijon',
+    text: 'Andijon',
     link: '/category/andijon'
   },
   {
     id: 5,
-    text: 'sirdaryo',
+    text: 'Sirdaryo',
     link: '/category/sirdaryo'
   },
   {
     id: 6,
-    text: 'jizzax',
+    text: 'Jizzax',
     link: '/category/jizzax'
   },
   {
     id: 7,
-    text: 'qashqadaryo',
+    text: 'Qashqadaryo',
     link: '/category/qashqadaryo'
   },
   {
     id: 8,
-    text: 'surxondaryo',
+    text: 'Surxondaryo',
     link: '/category/surxondaryo'
   },
   {
     id: 9,
-    text: 'buxoro',
+    text: 'Buxoro',
     link: '/category/buxoro'
   },
   {
     id: 10,
-    text: 'navoiy',
+    text: 'Navoiy',
     link: '/category/navoiy'
   },
   {
     id: 11,
-    text: 'xorazm',
+    text: 'Xorazm',
     link: '/category/xorazm'
   },
   {
     id: 12,
-    text: 'qoraqalpog`iston',
-    link: '/category/qoraqalpog`iston'
+    text: `Qoraqalpog'iston`,
+    link: `/category/qoraqalpog'iston`
   }
-] 
+]
+
+export default categories

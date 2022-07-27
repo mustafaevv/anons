@@ -1,13 +1,16 @@
 .element {
+  position: relative;
   width: 100%;
-  background: #f2f4f5;
+  background: #fff;
   display: flex;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 50px;
+  margin-top: 100px;
+  box-shadow: 10px 10px 10px silver;
 
   &__image {
-    width: 80%;
+    width: 60%;
     height: 400px;
     object-fit: cover;
     margin-right: 40px;
@@ -51,13 +54,23 @@
     margin-right: 30px;
     color: #000;
   }
-  &__tel{
+  &__tel {
     text-decoration: none;
     color: #000;
     font-weight: bold;
   }
-  &__email{
+  &__email {
     margin-top: 20px;
     color: #000;
+  }
+  &__icons {
+    margin-right: 10px;
+  }
+  &__star {
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    font-size: 25px;
+    color: gold;
   }
 }
