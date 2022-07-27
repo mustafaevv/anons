@@ -10,10 +10,10 @@
   box-shadow: 10px 10px 10px silver;
 
   &__image {
-    width: 60%;
+    width: 48%;
     height: 400px;
-    object-fit: cover;
-    margin-right: 40px;
+    object-fit: contain;
+    margin-right: 70px;
   }
 
   &__block {
@@ -29,7 +29,7 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #000;
-    margin-top: 50px;
+    margin-top: 25px;
   }
   &__address {
     font-size: 18px;
@@ -46,13 +46,19 @@
   &__list {
     display: flex;
     list-style: none;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   &__link {
     font-size: 24px;
     margin-right: 30px;
     color: #000;
+
+    &-img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+    }
   }
   &__tel {
     text-decoration: none;
@@ -66,11 +72,24 @@
   &__icons {
     margin-right: 10px;
   }
+  &__apps {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 30px;
+    padding-left: 0;
+  }
+  &__googlePlay {
+    width: 150px;
+    height: 40px;
+    margin-right: 30px;
+    object-fit: cover;
+  }
   &__star {
     position: absolute;
     top: 4%;
     right: 2%;
     font-size: 25px;
-    color: gold;
+    color: blue;
   }
 }

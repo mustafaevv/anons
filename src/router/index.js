@@ -5,7 +5,7 @@ const category =[
   },
   {
     text: 'brand',
-    link: '/brand'
+    link: '/category/:type'
   },
   {
     text: 'about',

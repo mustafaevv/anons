@@ -2,42 +2,42 @@ const categories = [
   {
     id: 0,
     text: 'Toshkent',
-    link: '/category/tashkent',
+    link: '/category/toshkent',
   },
   {
     id: 1,
+    text: 'Toshkent Viloyati',
+    link: '/category/toshkent',
+  },
+  {
+    id: 2,
     text: 'Samarqand',
     link: '/category/samarqand'
   },
   {
-    id: 2,
+    id: 3,
     text: 'Namangan',
     link: '/category/namangan'
   },
   {
-    id: 3,
+    id: 4,
     text: `Farg'ona`,
     link: `/category/farg'ona`
   },
   {
-    id: 4,
+    id: 5,
     text: 'Andijon',
     link: '/category/andijon'
   },
   {
-    id: 5,
+    id: 6,
     text: 'Sirdaryo',
     link: '/category/sirdaryo'
   },
   {
-    id: 6,
+    id: 7,
     text: 'Jizzax',
     link: '/category/jizzax'
-  },
-  {
-    id: 7,
-    text: 'Qashqadaryo',
-    link: '/category/qashqadaryo'
   },
   {
     id: 8,
@@ -63,7 +63,12 @@ const categories = [
     id: 12,
     text: `Qoraqalpog'iston`,
     link: `/category/qoraqalpog'iston`
-  }
-]
+  },
+  {
+    id: 13,
+    text: 'Qashqadaryo',
+    link: '/category/qashqadaryo'
+  },
+];
 
 export default categories

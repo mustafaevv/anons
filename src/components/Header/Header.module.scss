@@ -1,25 +1,25 @@
-.header{
+.header {
   background: #002f34;
   padding-top: 30px;
   padding-bottom: 30px;
 
-  &__content{
+  &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &__logo{
+  &__logo {
     width: 100px;
   }
 
-  &__list{
+  &__list {
     display: flex;
     align-items: center;
     list-style: none;
   }
 
-  &__link{
+  &__link {
     text-decoration: none;
     font-size: 18px;
     text-transform: capitalize;
@@ -29,7 +29,7 @@
     transition: 0.5s color;
 
     &:hover,
-    &-active{
+    &-active {
       color: #7f9799;
     }
   }
