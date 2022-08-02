@@ -6,9 +6,8 @@ import Container from "../../layout/Container";
 import Carousel from "../../components/Carousel";
 import ContactFooter from "../../components/ContactFooter";
 import Element from "../../components/Element";
-import categories from "../../router/categories";
+import NavLink from "../../components/NavLink";
 
-import classes from "./Category.module.scss";
 
 const Category = () => {
   const { type } = useParams();
@@ -26,17 +25,7 @@ const Category = () => {
     <>
       <Header />
       <Carousel />
-      <Container>
-        <ul className={classes["list"]}>
-          {categories.map((item) => (
-            <li key={item.id}>
-              <Link className={classes["list__link"]} to={item.link}>
-                {item.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </Container>
+      <NavLink/>
       {data && data.map((item) => <Element key={item.id} data={item} />)}
       <ContactFooter />
     </>
