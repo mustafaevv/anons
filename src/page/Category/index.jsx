@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import Header from "../../components/Header";
-import Container from "../../layout/Container";
 import Carousel from "../../components/Carousel";
-import ContactFooter from "../../components/ContactFooter";
-import Element from "../../components/Element";
 import NavLink from "../../components/NavLink";
-
+import Element from "../../components/Element";
+import ContactFooter from "../../components/ContactFooter";
 
 const Category = () => {
   const { type } = useParams();
@@ -25,7 +23,7 @@ const Category = () => {
     <>
       <Header />
       <Carousel />
-      <NavLink/>
+      <NavLink />
       {data && data.map((item) => <Element key={item.id} data={item} />)}
       <ContactFooter />
     </>

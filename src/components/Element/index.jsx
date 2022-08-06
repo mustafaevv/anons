@@ -11,14 +11,15 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Container from "../../layout/Container";
 
-import googlePlay from '../../images/googlePlay.png'
-import appleStore from '../../images/appleStore.png'
+import googlePlay from "../../images/googlePlay.png";
+import appleStore from "../../images/appleStore.png";
 import facebook from "../../images/facebook.png";
 import instagram from "../../images/instagram.png";
 import telegram from "../../images/telegram.png";
 
 import classes from "./Element.module.scss";
-import "swiper/css";
+import classNames from "classnames";
+
 
 const Element = ({ data }) => {
   return (
@@ -62,7 +63,7 @@ const Element = ({ data }) => {
             </li>
             <li>
               <Link
-                className={classes["element__link"]}
+                className={classNames(classes["element__link"],classes['element__link-instagram'])}
                 target="_blank"
                 to={data.instagram}
               >
@@ -108,12 +109,20 @@ const Element = ({ data }) => {
             <ul className={classes["element__apps"]}>
               <li>
                 <a href="#!">
-                  <img className={classes['element__googlePlay']} src={appleStore} alt="App Store" />
+                  <img
+                    className={classes["element__googlePlay"]}
+                    src={appleStore}
+                    alt="App Store"
+                  />
                 </a>
               </li>
               <li>
                 <a href="#!">
-                  <img className={classes['element__googlePlay']} src={googlePlay} alt="Google Play" />
+                  <img
+                    className={classes["element__googlePlay"]}
+                    src={googlePlay}
+                    alt="Google Play"
+                  />
                 </a>
               </li>
             </ul>
@@ -122,7 +131,6 @@ const Element = ({ data }) => {
         <div>
           <p>{data.maps}</p>
         </div>
-        <FontAwesomeIcon className={classes["element__star"]} icon={faStar} />
       </div>
     </Container>
   );

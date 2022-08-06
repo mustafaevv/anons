@@ -12,6 +12,21 @@
   &__logo {
     width: 100px;
   }
+  &__button {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+  }
 
   &__list {
     display: flex;
@@ -32,5 +47,18 @@
     &-active {
       color: #7f9799;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .header__content {
+    flex-direction: column;
+  }
+  .header__list{
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .header__link{
+    margin-left: 0;
   }
 }

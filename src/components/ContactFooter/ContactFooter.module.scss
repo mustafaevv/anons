@@ -17,6 +17,7 @@
   }
   &__tell-list {
     display: flex;
+    align-items: center;
   }
   &__tell {
     text-decoration: none;
@@ -36,5 +37,27 @@
     text-decoration: none;
     font-weight: 500;
     text-transform: capitalize;
+  }
+  &__telegram {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+}
+
+@media(max-width:992px){
+  .footer__tell-list,
+  .footer__container{
+    flex-direction: column;
+  }
+  .footer__tell-list{
+    margin-top: 30px;
+  }
+  .footer__tell-list li{
+    margin-bottom: 20px;
+  }
+  .footer__telegram{
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import Container from "../../layout/Container";
 import category from "../../router/categories";
 
 import classes from "./NavLink.module.scss";
+import classNames from "classnames";
 
 const NavLink = () => {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
+
   return (
     <Container>
       <div className="from">
@@ -23,13 +26,21 @@ const NavLink = () => {
         </div>
         {isOpen && (
           <div className={classes["form__block"]}>
-            <button className={classes["form__close"]} onClick={closeModal}>
-              <FontAwesomeIcon icon={faClose} />
-            </button>
             <ul className={classes["form__list"]}>
-              {category.map((item,index) => (
-                <li key={index}>
-                  <Link className={classes["form__link"]} to={item.link}>
+              <button className={classes["form__close"]} onClick={closeModal}>
+                <FontAwesomeIcon icon={faClose} />
+              </button>
+              {category.map((item, index) => (
+                <li className={classes['form__li']} key={index}>
+                  <Link
+                    className={classNames(
+                      classes["form__link"],
+                      location.pathname === item.link
+                        ? classes["form__link-active"]
+                        : ""
+                    )}
+                    to={item.link}
+                  >
                     {item.text}
                   </Link>
                 </li>

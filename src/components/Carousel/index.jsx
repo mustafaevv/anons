@@ -1,5 +1,5 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper as Slider, SwiperSlide as Sliders } from "swiper/react";
 import { A11y, Navigation, Scrollbar } from "swiper";
 
 import image from "../../images/img3.jpg";
@@ -7,31 +7,30 @@ import image from "../../images/img3.jpg";
 import classes from "./Carousel.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
-// import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-const index = () => {
+
+const Carousel = () => {
   return (
-    <Swiper
-      // install Swiper modules
+    <Slider
       modules={[Navigation, Scrollbar, A11y]}
       spaceBetween={0}
       slidesPerView={1}
       navigation
     >
-      <SwiperSlide>
+      <Sliders>
         <img className={classes["image"]} src={image} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
+      </Sliders>
+      <Sliders>
         <img className={classes["image"]} src={image} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
+      </Sliders>
+      <Sliders>
         <img className={classes["image"]} src={image} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
+      </Sliders>
+      <Sliders>
         <img className={classes["image"]} src={image} alt="" />
-      </SwiperSlide>
-    </Swiper>
+      </Sliders>
+    </Slider>
   );
 };
 
-export default index;
+export default Carousel;
