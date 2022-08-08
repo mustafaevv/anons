@@ -12,26 +12,25 @@ import classNames from "classnames";
 const NavLink = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
-  const openModal = () => setIsOpen(true);
-  const closeModal = () => setIsOpen(false);
+  const handleClick = () => setIsOpen((state) => !state);
 
   return (
     <Container>
       <div className="from">
         <div className={classes["form__controls"]}>
           <h3 className={classes["form__title"]}>Your Select Region</h3>
-          <button className={classes["form__show"]} onClick={openModal}>
+          <button className={classes["form__show"]} onClick={handleClick}>
             Regions
           </button>
         </div>
         {isOpen && (
           <div className={classes["form__block"]}>
             <ul className={classes["form__list"]}>
-              <button className={classes["form__close"]} onClick={closeModal}>
+              <button className={classes["form__close"]} onClick={handleClick}>
                 <FontAwesomeIcon icon={faClose} />
               </button>
               {category.map((item, index) => (
-                <li className={classes['form__li']} key={index}>
+                <li className={classes["form__li"]} key={index}>
                   <Link
                     className={classNames(
                       classes["form__link"],

@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGlobe,
   faLocationDot,
-  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +18,6 @@ import telegram from "../../images/telegram.png";
 
 import classes from "./Element.module.scss";
 import classNames from "classnames";
-
 
 const Element = ({ data }) => {
   return (
@@ -63,7 +61,10 @@ const Element = ({ data }) => {
             </li>
             <li>
               <Link
-                className={classNames(classes["element__link"],classes['element__link-instagram'])}
+                className={classNames(
+                  classes["element__link"],
+                  classes["element__link-instagram"]
+                )}
                 target="_blank"
                 to={data.instagram}
               >
@@ -127,9 +128,6 @@ const Element = ({ data }) => {
               </li>
             </ul>
           </div>
-        </div>
-        <div>
-          <p>{data.maps}</p>
         </div>
       </div>
     </Container>

@@ -40,29 +40,6 @@ const About = () => {
           suscipit?
         </p>
         <p className={classes["about__text"]}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, ipsum
-          neque distinctio reiciendis veritatis voluptatem repellendus
-          perspiciatis deserunt ducimus, et tempore eaque quas veniam? Culpa
-          ipsa tempora amet iste minus. Atque natus esse culpa sed facilis,
-          temporibus fugit provident consequatur facere reprehenderit nihil
-          itaque, dolorem, beatae animi commodi! Similique modi aut assumenda
-          doloremque facere voluptatum, quia quis accusamus exercitationem,
-          provident suscipit nisi iure! Ipsum quod nam dignissimos repellendus
-          labore! Suscipit rerum repudiandae beatae laboriosam sit maxime
-          consequatur enim labore architecto id iste exercitationem deserunt et,
-          facilis, repellat ut, cum harum. Quia dignissimos excepturi quis neque
-          veniam saepe nulla fugit amet ullam, ad eum aspernatur dicta ratione
-          quidem labore consequuntur, tempore quam recusandae quasi fugiat
-          laboriosam vel! Reprehenderit consectetur dicta laudantium provident
-          dolorem sed nam numquam nesciunt culpa. Iste sed ducimus sequi vero
-          provident facilis inventore aut accusantium, labore nobis saepe
-          repellat eum recusandae autem maxime sapiente aliquam dolor, dolores
-          voluptatum ratione quo. Beatae repellendus, sint qui molestias
-          architecto eaque doloribus expedita similique cumque dolor eligendi
-          nobis corporis quibusdam maxime perferendis sed totam praesentium
-          molestiae nisi minima recusandae adipisci?
-        </p>
-        <p className={classes["about__text"]}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           impedit quibusdam vero numquam exercitationem. A quo enim tempora
           asperiores, officia veritatis, nostrum minima voluptates nemo eveniet,
