@@ -12,7 +12,7 @@ const About = () => {
     <>
       <Header />
       <Carousel />
-      <Container className={classes['about__container']}>
+      <Container className={classes["about__container"]}>
         <p className={classes["about__text"]}>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus
           eaque labore eligendi animi laboriosam, tenetur, error harum nobis

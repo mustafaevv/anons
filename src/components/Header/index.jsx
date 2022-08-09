@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import classNames from "classnames";
 
@@ -7,9 +7,14 @@ import category from "../../router";
 import logo from "../../images/logo192.png";
 
 import classes from "./Header.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const location = useLocation();
+  const [opened, setOpened] = useState(false);
+  const show = () => setOpened((state) => !state);
+  console.log('Hello',123);
   return (
     <header className={classes["header"]}>
       <Container className={classes["header__content"]}>
@@ -20,23 +25,37 @@ const Header = () => {
             alt="React Logo"
           />
         </Link>
-        <ul className={classes["header__list"]}>
-          {category.map((item, index) => (
-            <li key={index}>
-              <Link
-                className={classNames(
-                  classes["header__link"],
-                  location.pathname === item.link
-                    ? classes["header__link-active"]
-                    : ""
-                )}
-                to={item.link}
-              >
-                {item.text}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {opened && (
+          <ul className={classNames(classes["header__list"])}>
+            {category.map((item, index) => (
+              <li key={index}>
+                <Link
+                  className={classNames(
+                    classes["header__link"],
+                    location.pathname === item.link
+                      ? classes["header__link-active"]
+                      : ""
+                  )}
+                  to={item.link}
+                >
+                  {item.text}
+                </Link>
+              </li>
+            ))}
+            <button
+              onClick={show}
+              className={classNames(
+                classes["header__button"],
+                classes["header__button-close"]
+              )}
+            >
+              <FontAwesomeIcon icon={faClose} />
+            </button>
+          </ul>
+        )}
+        <button onClick={show} className={classes["header__button"]}>
+          <FontAwesomeIcon icon={faBars} />
+        </button>
       </Container>
     </header>
   );
