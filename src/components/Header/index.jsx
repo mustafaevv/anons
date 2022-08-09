@@ -14,7 +14,6 @@ const Header = () => {
   const location = useLocation();
   const [opened, setOpened] = useState(false);
   const show = () => setOpened((state) => !state);
-  console.log('Hello',123);
   return (
     <header className={classes["header"]}>
       <Container className={classes["header__content"]}>
