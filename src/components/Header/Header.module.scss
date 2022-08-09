@@ -18,7 +18,7 @@
     width: 40px;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: #283b8b;
+    background-color: #fff;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     position: absolute;
@@ -83,7 +83,7 @@
       justify-content: center;
       flex-direction: column;
       gap: 1.5rem;
-      background: red;
+      background: #283b8b;
       transition: 0.5s;
       transform: translateY(-100vh);
       margin-left: 0;

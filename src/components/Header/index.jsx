@@ -24,7 +24,7 @@ const Header = () => {
             alt="React Logo"
           />
         </Link>
-        {opened && (
+        {opened || (
           <ul className={classNames(classes["header__list"])}>
             {category.map((item, index) => (
               <li key={index}>
