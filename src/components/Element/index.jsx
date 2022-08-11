@@ -88,13 +88,13 @@ const Element = ({ data }) => {
           </ul>
           <a
             className={classes["element__tel"]}
-            href={`tel:${data.tellNumber}`}
+            href={`tel:+${data.tellNumber}`}
           >
             <FontAwesomeIcon
               className={classes["element__icons"]}
               icon={faPhone}
             />
-            {data.tellNumber}
+            {`+${data.tellNumber}`}
           </a>
           <p className={classes["element__email"]}>
             <FontAwesomeIcon
