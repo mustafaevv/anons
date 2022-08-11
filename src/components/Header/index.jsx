@@ -13,7 +13,6 @@ import classes from "./Header.module.scss";
 const Header = () => {
   const location = useLocation();
   const [opened, setOpened] = useState(false);
-  const ref = useRef();
   const open = () => setOpened(true);
   const close = () => setOpened(false);
   return (
@@ -36,7 +35,7 @@ const Header = () => {
           <FontAwesomeIcon icon={faBars} />
         </button>
         {opened && (
-          <ul ref={ref} className={classNames(classes["header__list"])}>
+          <ul className={classNames(classes["header__list"])}>
             {category.map((item, index) => (
               <li key={index}>
                 <Link

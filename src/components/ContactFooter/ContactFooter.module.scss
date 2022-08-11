@@ -45,18 +45,22 @@
   }
 }
 
-@media(max-width:992px){
+@media (max-width: 992px) {
   .footer__tell-list,
-  .footer__container{
+  .footer__container {
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-  .footer__tell-list{
+  .footer__tell-list {
     margin-top: 30px;
   }
-  .footer__tell-list li{
+  .footer__tell-list li {
     margin-bottom: 20px;
   }
-  .footer__telegram{
+  .footer__telegram {
     margin-top: 20px;
     margin-bottom: 20px;
   }

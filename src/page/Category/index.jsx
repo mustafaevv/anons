@@ -13,7 +13,9 @@ const Category = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`http://localhost:4000/items?category=${type}`);
+      const res = await fetch(
+        `${process.env.REACT_APP_API_URL}/anons?category=${type}`
+      );
       const item = await res.json();
       setData(item);
     };
