@@ -46,7 +46,13 @@
 }
 
 @media (max-width: 992px) {
-  .footer__tell-list,
+  .footer__list {
+    display: flex;
+  }
+  .footer__list li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .footer__container {
     flex-direction: column;
     display: flex;
@@ -63,5 +69,11 @@
   .footer__telegram {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 678px) {
+  .footer__tell-list {
+    flex-direction: column;
   }
 }

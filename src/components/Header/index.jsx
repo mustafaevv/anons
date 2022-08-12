@@ -13,8 +13,8 @@ import classes from "./Header.module.scss";
 const Header = () => {
   const location = useLocation();
   const [opened, setOpened] = useState(false);
-  const open = () => setOpened(true);
-  const close = () => setOpened(false);
+  const handleClick = () => setOpened((state) => !state);
+
   return (
     <header className={classes["header"]}>
       <Container className={classes["header__content"]}>
@@ -26,7 +26,7 @@ const Header = () => {
           />
         </Link>
         <button
-          onClick={open}
+          onClick={handleClick}
           className={classNames(
             classes["header__button"],
             classes["header__button-show"]
@@ -52,7 +52,7 @@ const Header = () => {
               </li>
             ))}
             <button
-              onClick={close}
+              onClick={handleClick}
               className={classNames(
                 classes["header__button"],
                 classes["header__button-close"]
