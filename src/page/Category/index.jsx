@@ -12,10 +12,9 @@ const Category = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    console.log(123, process.env.REACT_APP_API_URL);
     const fetchData = async () => {
       const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/items?category=${type}`
+        `${process.env.REACT_APP_API_URL}=${type}`
       );
       const item = await res.json();
       setData(item);
