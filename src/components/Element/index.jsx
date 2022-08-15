@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -14,7 +15,6 @@ import instagram from "../../images/instagram.png";
 import telegram from "../../images/telegram.png";
 
 import classes from "./Element.module.scss";
-import classNames from "classnames";
 
 const Element = ({ data }) => {
   return (
