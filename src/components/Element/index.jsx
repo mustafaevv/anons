@@ -34,7 +34,7 @@ const Element = ({ data }) => {
           <Link
             className={classes["element__webSite"]}
             to={data.webSite}
-            target="_blank"
+            
           >
             <FontAwesomeIcon
               className={classes["element__icons"]}

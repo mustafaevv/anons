@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useLocation, Link } from "react-router-dom";
 import classNames from "classnames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,8 +13,8 @@ import classes from "./Header.module.scss";
 const Header = () => {
   const location = useLocation();
   const [opened, setOpened] = useState(false);
-  const handleClick = () => setOpened((state) => !state);
-
+  const open = () => setOpened(true);
+  const close = () => setOpened(false);
   return (
     <header className={classes["header"]}>
       <Container className={classes["header__content"]}>
@@ -26,16 +26,22 @@ const Header = () => {
           />
         </Link>
         <button
-          onClick={handleClick}
-          className={classNames(
-            classes["header__button"],
-            classes["header__button-show"]
-          )}
+          onClick={open}
+          className={classNames(classes["header__button"])}
         >
           <FontAwesomeIcon icon={faBars} />
         </button>
         {opened && (
-          <ul className={classNames(classes["header__list"])}>
+          <ul className={classes["header__list"]}>
+            <button
+              onClick={close}
+              className={classNames(
+                classes["header__button"],
+                classes["header__button-close"]
+              )}
+            >
+              <FontAwesomeIcon icon={faClose} />
+            </button>
             {category.map((item, index) => (
               <li key={index}>
                 <Link
@@ -51,15 +57,6 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            <button
-              onClick={handleClick}
-              className={classNames(
-                classes["header__button"],
-                classes["header__button-close"]
-              )}
-            >
-              <FontAwesomeIcon icon={faClose} />
-            </button>
           </ul>
         )}
       </Container>
