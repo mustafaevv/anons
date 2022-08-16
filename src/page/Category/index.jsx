@@ -10,7 +10,6 @@ import ContactFooter from "../../components/ContactFooter";
 const Category = () => {
   const { type } = useParams();
   const [data, setData] = useState(null);
-
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
