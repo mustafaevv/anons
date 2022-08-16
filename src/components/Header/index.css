@@ -72,7 +72,8 @@
     transform: translateY(-100%);
     z-index: 2;
   }
-  .header__link{
+
+  .header__link {
     margin-left: 0;
   }
 
@@ -82,44 +83,7 @@
 
   .nav-close-btn {
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 12%;
+    right: 6%;
   }
 }
-
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.nav-btn {
-  padding: 10px;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: white;
-  cursor: pointer;
-  font-size: 25px;
-  visibility: hidden;
-  opacity: 0;
-}
-
-@media (max-width: 992px) {
-  .nav-btn {
-    visibility: visible;
-    opacity: 1;
-  }
-
-
-  .open {
-    transform: none;
-  }
-
-  .nav-close-btn {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-  }
-} */

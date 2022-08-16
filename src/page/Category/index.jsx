@@ -12,9 +12,7 @@ const Category = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(
-        `${process.env.REACT_APP_URL}/items?category=${type}`
-      );
+      const res = await fetch(`${process.env.REACT_APP_URL}?category=${type}`);
       const item = await res.json();
       setData(item);
     };
