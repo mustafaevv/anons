@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import classNames from "classnames";
 
 import Container from "../../layout/Container";
 import category from "../../router";
@@ -32,12 +33,10 @@ const Header = () => {
           {category.map((item, index) => (
             <li key={index}>
               <Link
-                className={
-                  ("header__link",
-                  location.pathname === item.link
-                    ? "header__link-active"
-                    : "header__link")
-                }
+                className={classNames(
+                  "header__link",
+                  location.pathname === item.link ? "header__link-active" : ""
+                )}
                 to={item.link}
               >
                 {item.text}

@@ -66,9 +66,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 1.5rem;
-    background: black;
-    transition: 0.5s;
+    gap: 2rem;
+    background: #00265c;
+    transition: 0.5s linear transform;
     transform: translateY(-100%);
     z-index: 2;
   }
