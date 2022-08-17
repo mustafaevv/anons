@@ -16,7 +16,7 @@ const Category = () => {
       <Header />
       <Carousel />
       <NavLink />
-      {data && data.map((item) => <Element key={item.id} data={item} />)}
+      {data && data.map((item, index) => <Element key={index} data={item} />)}
       <ContactFooter />
     </>
   );

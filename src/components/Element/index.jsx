@@ -31,11 +31,7 @@ const Element = ({ data }) => {
             />
             {data.address}
           </p>
-          <Link
-            className={classes["element__webSite"]}
-            to={data.webSite}
-            
-          >
+          <Link className={classes["element__webSite"]} to={data.webSite}>
             <FontAwesomeIcon
               className={classes["element__icons"]}
               icon={faGlobe}
