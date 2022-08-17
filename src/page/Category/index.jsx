@@ -10,7 +10,7 @@ import useGetData from "../../hooks/useGetData";
 
 const Category = () => {
   const { type } = useParams();
-  const {data} = useGetData(`items?category=${type}`);
+  const [data] = useGetData(`items?category=${type}`);
   return (
     <>
       <Header />
