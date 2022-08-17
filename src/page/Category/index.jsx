@@ -20,3 +20,6 @@ const Category = () => {
       <ContactFooter />
     </>
   );
+};
+
+export default Category;
